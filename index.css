@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(210, 46%, 95%);
+  
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.preview-panel {
+  display: flex;
+  width: 55vw;
+  height: 33vh;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 1px 7px 10px 1px hsl(213, 8%, 79%);
+  background-color: whitesmoke;
+}
+
+.drawer-img {
+  height: 33vh;
+  width: 350px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.preview-content {
+    margin: 0 auto;
+    height: inherit;
+    width: 55%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.preview-header {
+  font-family: "Manrope", sans-serif;
+  word-wrap: break-word;
+  color: hsl(217, 19%, 35%);
+}
+
+.preview-text {
+  font-family: "Manrope", sans-serif;
+  color: hsl(212, 23%, 69%);
+}
+
+.preview-footer {
+  font-family: "Manrope", sans-serif;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+.avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.avatar-name {
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+}
+
+.date {
+    margin: 0;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-button {
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-color: rgb(226, 221, 221);
+}
+
+.share-svg:hover {
+  fill: white
+}
+
+.share-button:hover {
+  background-color: grey;
+}
