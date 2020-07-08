@@ -1,111 +1,98 @@
-* {
-  box-sizing: border-box;
+:root {
+  --darkGrayishBlue: hsl(217, 19%, 35%): 
+  --desaturatedDarkBlue: hsl(214, 17%, 51%)
+  --grayishBlue: hsl(212, 23%, 69%)
+  --lightGrayish Blue: hsl(210, 46%, 95%)
 }
-
-html {
-  background-color: hsl(210, 46%, 95%);
-  
-}
-
 body {
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+  background-color: hsl(210, 46%, 95%);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 375px) and (max-width: 412px) {
 
-
-
-
-.preview-panel {
-  display: flex;
-  width: 55vw;
-  height: 33vh;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 1px 7px 10px 1px hsl(213, 8%, 79%);
-  background-color: whitesmoke;
-}
-
-.drawer-img {
-  height: 33vh;
-  width: 350px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.preview-content {
-    margin: 0 auto;
-    height: inherit;
-    width: 55%;
+  .preview-panel {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-    align-items: center;
-}
+    align-items: stretch;
+    margin: 0 auto;
+    width: 85vw;
+    height: 65vh;
 
-.preview-header {
-  font-family: "Manrope", sans-serif;
-  word-wrap: break-word;
-  color: hsl(217, 19%, 35%);
-}
-
-.preview-text {
-  font-family: "Manrope", sans-serif;
-  color: hsl(212, 23%, 69%);
-}
-
-.preview-footer {
-  font-family: "Manrope", sans-serif;
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 25vw;
-}
-
-.person-info {
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-
-.avatar {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin-right: 5px;
-}
-
-.avatar-name {
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  .preview-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 75vw;
+    height: 35vh;
+    align-self: center;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+        border: 1px solid green;
+    margin-top: 20px;
+  }
+  .preview-header {
+    font-size: 15px;
     color: hsl(217, 19%, 35%);
-    margin: 0;
-}
+  }
 
-.date {
+  .preview-text {
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    margin-top: 5px;
+  }
+  .drawer-img {
+    width: 85vw;
+    height: 25vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0;
+  }
+  .preview-footer {
+    display: flex;
+    justify-self: flex-end;
+    margin-top: 10px;
+  }
+  .person-info {
+    display: flex;
+    justify-content: flex-start;
+    
+    width: 80vw;
+  }
+  .avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .avatar-name {
+    margin: 0;
+    color: hsl(217, 19%, 35%);
+  }
+
+  
+  .date {
     margin: 0;
     color: hsl(212, 23%, 69%);
-}
+  }
+  
+  .share-button {
+    border-radius: 50%;
+    border: none;
+  }
 
-.share-button {
-  border-radius: 15px;
-  border: none;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  background-color: rgb(226, 221, 221);
-}
-
-.share-svg:hover {
-  fill: white
-}
-
-.share-button:hover {
-  background-color: grey;
+  .share-button:hover {
+    background-color: grey;
+    fill: whitesmoke;
+  }
 }
