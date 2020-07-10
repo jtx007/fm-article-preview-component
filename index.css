@@ -46,18 +46,16 @@ body {
     flex-flow: column;
     justify-content: flex-start;
     margin-right: 20px;
-    /* border: 1px solid springgreen; */
   }
 
   .preview-header {
     color: hsl(217, 19%, 35%);
-    margin-top: 10px;
   }
   
   .preview-text {
     color: hsl(214, 17%, 51%);
-    margin-top: 5px;
-    line-height: 1.5;
+    margin-top: -5px;
+    line-height: 1.8;
   }
   
   .avatar {
@@ -88,15 +86,37 @@ body {
     color: hsl(212, 23%, 69%);
   }
   
-  .share-button {
+  .share-svg-button {
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    background-color: #ECF2F8;
     border: none;
-    margin-top: 10px;
-    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+    margin-top: 15px;
+    margin-right: 20px;
+    fill: #6E8098;
   }
 
+  .share-svg-button:focus {
+    outline: none;
+  }
+
+  .share-svg-button:hover {
+    fill: white;
+    background-color: grey;
+    cursor: pointer;
+  }
+
+  
+
+  
+
+  
+
+
+
+  
+  
 
 }
 
