@@ -19,7 +19,7 @@ body {
 
   .preview-panel {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     width: 45vw;
     height: 32vh;
@@ -27,6 +27,7 @@ body {
     box-shadow: 0px 10px 40px 1px hsl(213, 36%, 85%);
     background-color: whitesmoke;
     border-radius: 10px;
+    z-index: 1;
   }
 
   .drawer-img {
@@ -38,14 +39,15 @@ body {
 .preview-content {
     padding-left: 10px;
     padding-right: 10px;
-    height: 27vh;
     width: 23vw;
+    height: inherit;
     justify-self: center;
     align-self: center;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   .preview-header {
@@ -54,7 +56,7 @@ body {
   
   .preview-text {
     color: hsl(214, 17%, 51%);
-    margin-top: -5px;
+    margin-top: -10px;
     line-height: 1.8;
   }
   
@@ -73,6 +75,9 @@ body {
   .preview-footer {
     display: flex;
     justify-content: space-between;
+    margin-top: -10px;
+    z-index: 0;
+    position: relative;
   }
 
    .avatar-name {
@@ -94,21 +99,49 @@ body {
     height: 32px;
     margin-top: 15px;
     margin-right: 20px;
-    fill: #6E8098;
+    fill: #6E8098 !important;
   }
 
   .share-svg-button:focus {
     outline: none;
+    background-color: hsl(217, 19%, 35%);
+    cursor: pointer;
+    fill: white !important;
   }
 
   .share-svg-button:hover {
-    fill: white;
-    background-color: grey;
+    fill: white !important;
+    background-color: hsl(217, 19%, 35%);
     cursor: pointer;
   }
 
-  
+  .popover {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    width: 12vw;
+    height: 55px;
+    bottom: 65px;
+    left: 220px;
+    visibility: hidden;
+    color: hsl(214, 17%, 51%);
+    padding-left: 20px;
+    padding-right: 20px;  
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
 
+  .show {
+    visibility: visible;
+    transition: all ease-in .5s;
+    transition-duration: 500ms;
+    transition-property: visibilty, transform;
+    transition-timing-function: ease-in-out;
+
+  }
   
 
   
@@ -206,13 +239,18 @@ body {
     color: hsl(212, 23%, 69%);
   }
   
-  .share-button {
+  .share-svg-button {
     border-radius: 50%;
     border: none;
+    background-color: #ECF2F8;
+    fill: #6E8098 !important;
+
   }
 
-  .share-button:hover {
+  
+
+  .share-svg-button:hover {
     background-color: grey;
-    fill: whitesmoke;
+    fill: whitesmoke !important;
   }
 }
