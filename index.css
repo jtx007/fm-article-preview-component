@@ -215,7 +215,6 @@ body {
   }
   .preview-footer {
     display: flex;
-    margin-top: 25px;
   }
   .person-info {
     display: flex;
@@ -247,7 +246,10 @@ body {
     border: none;
     background-color: #ECF2F8;
     fill: #6E8098 !important;
-
+    z-index: 2;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
   }
 
   
@@ -259,10 +261,10 @@ body {
 
   .popover {
     background-color: hsl(217, 19%, 35%);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     height: 55px;
-    width: 85vw;
+    width: 82.5vw;
     bottom: 0px;
     right: -9px;
     visibility: hidden;
@@ -273,6 +275,17 @@ body {
     align-items: center;
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;
+    z-index: 1;
+    padding: 5px;
+    
+  }
+
+  .mobile {
+    margin-left: 10px
+  }
+
+  .pinterest-icon {
+    margin-right: 70px;
   }
 
   .show {
@@ -284,7 +297,7 @@ body {
 
   .share-svg-button:focus {
     outline: none;
-    background-color: hsl(217, 19%, 35%);
+    background-color: hsl(217, 21%, 54%);
     cursor: pointer;
     fill: white !important;
   }
