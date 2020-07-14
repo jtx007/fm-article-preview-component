@@ -18,7 +18,5 @@ shareButton.addEventListener('focusout', (event) => {
     event.preventDefault()
     if (popover.classList.contains("show")) {
       popover.classList.remove("show");
-    } else {
-      popover.classList.add("show");
-    }
+    } 
 })
