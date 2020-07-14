@@ -178,8 +178,8 @@ body {
   .preview-panel {
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: stretch;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 85vw;
     height: 63vh;
@@ -192,13 +192,12 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     width: 70vw;
-    height: 35vh;
+    height: 34vh;
     display: flex;
     flex-flow: column;
     align-self: center;
     justify-content: space-evenly;
     position: relative;
-    margin-top: 10px;
   }
 
   .preview-header {
@@ -209,7 +208,6 @@ body {
   .preview-text {
     font-size: 13px;
     color: hsl(214, 17%, 51%);
-    margin-top: -5px;
   }
   .drawer-img {
     width: 85vw;
@@ -220,7 +218,7 @@ body {
   }
   .preview-footer {
     display: flex;
-    margin-bottom: 0;
+    margin-top: 35px;
   }
   .person-info {
     display: flex;
@@ -271,8 +269,8 @@ body {
     border-bottom-right-radius: 10px;
     height: 55px;
     width: 82.5vw;
-    bottom: 0px;
-    right: -9px;
+    bottom: -5px;
+    right: -19px;
     visibility: hidden;
     color: hsl(214, 17%, 51%);  
     position: absolute;
